@@ -1,0 +1,21 @@
+Create a new file using “nano” command and write the following block of code,
+#!/bin/bash
+while true
+do
+echo "Looping"
+done
+  ^
+  |
+Save the file, make it executable using the command “chmod 777 [filename]”.
+
+12) 3: ubuntu > cd / > ls > cd etc > ls > cd nginx > ls > cdsites-availabe > ls > sudo chmod 777 default > nano
+default
+and write the following code in location
+“{
+proxy_pass http://localhost:4000;
+proxy_http_version 1.1;
+proxy_set_header Upgrade $http_upgrade;
+proxy_set_header connection 'Upgrade';
+proxy_set_header Host $host;
+proxy_cache_bypass $http_upgrade;
+}” 
